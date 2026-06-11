@@ -4,7 +4,7 @@ from flask import Flask, render_template, request, jsonify
 app = Flask(__name__)
 
 # Hardcoded credentials for demo purposes
-DEMO_USER = "admin"
+DEMO_USER = "dunsin"
 DEMO_PASS = "password123"
 
 @app.route('/')
@@ -41,4 +41,5 @@ def login():
         return jsonify({"message": "Invalid username or password."}), 401
 
 if __name__ == '__main__':
+
     app.run(debug=True)
